@@ -60,6 +60,9 @@
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
     .box { background: var(--surface); padding: 22px; border-radius: 10px; }
     .box h3 { margin-bottom: 6px; }
+    .box-link { display: flex; align-items: center; justify-content: center; transition: transform .15s, filter .15s; cursor: pointer; }
+    .box-link h3 { margin: 0; font-size: 1.15rem; }
+    .box-link:hover { transform: translateY(-3px); filter: brightness(1.1); }
     .box p { color: var(--muted); }
 
     .contact { list-style: none; margin-top: 12px; }
@@ -112,7 +115,7 @@
     <section id="contenido">
       <h2>Contenido</h2>
       <div class="grid">
-        <article class="box"><h3>Bloque 1</h3><p>Texto de ejemplo.</p></article>
+        <a class="box box-link" href="objetos.html"><h3>Objetos y decoraciones</h3></a>
         <article class="box"><h3>Bloque 2</h3><p>Texto de ejemplo.</p></article>
         <article class="box"><h3>Bloque 3</h3><p>Texto de ejemplo.</p></article>
       </div>
