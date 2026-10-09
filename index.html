@@ -46,7 +46,9 @@
 
     /* Secciones */
     section { max-width: var(--max); margin: 0 auto; padding: 72px 20px; text-align: center; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; max-width: 16ch; margin: 0 auto; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; max-width: 16ch; margin: 0; }
+    .hero-title { display: flex; align-items: center; justify-content: center; gap: 16px; }
+    .hero-logo { width: clamp(64px, 12vw, 120px); height: auto; display: block; }
     .hero p { margin: 18px auto 28px; color: var(--muted); max-width: 52ch; }
     .btn {
       display: inline-block; background: var(--accent); color: #fff;
@@ -99,7 +101,10 @@
 
   <main>
     <section class="hero" id="inicio">
-      <h1>Mercuri</h1>
+      <div class="hero-title">
+        <img src="logo.png" alt="" class="hero-logo">
+        <h1>Mercuri</h1>
+      </div>
       <p>Una descripción muy interesante.</p>
       <a href="#contenido" class="btn">Ver más</a>
     </section>
