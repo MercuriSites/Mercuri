@@ -33,11 +33,11 @@
     }
     .nav {
       max-width: var(--max); margin: 0 auto; padding: 14px 20px;
-      display: flex; align-items: center; justify-content: space-between;
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
     }
-    .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.2rem; }
+    .logo { display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: 700; font-size: 1.2rem; }
     .logo img { width: 36px; height: 36px; display: block; }
-    .menu { display: flex; gap: 24px; list-style: none; }
+    .menu { display: flex; justify-content: center; gap: 24px; list-style: none; text-align: center; }
     .menu a:hover { color: var(--accent); }
     .menu-btn {
       display: none; background: none; border: 1px solid #1f1f1f;
@@ -45,9 +45,9 @@
     }
 
     /* Secciones */
-    section { max-width: var(--max); margin: 0 auto; padding: 72px 20px; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; max-width: 16ch; }
-    .hero p { margin: 18px 0 28px; color: var(--muted); max-width: 52ch; }
+    section { max-width: var(--max); margin: 0 auto; padding: 72px 20px; text-align: center; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; max-width: 16ch; margin: 0 auto; }
+    .hero p { margin: 18px auto 28px; color: var(--muted); max-width: 52ch; }
     .btn {
       display: inline-block; background: var(--accent); color: #fff;
       padding: 12px 22px; border-radius: 8px; font-weight: 600; border: 0; cursor: pointer;
